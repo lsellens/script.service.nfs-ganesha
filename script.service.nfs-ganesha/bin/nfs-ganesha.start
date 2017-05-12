@@ -1,0 +1,12 @@
+#!/bin/sh
+
+. /etc/profile
+oe_setup_addon script.service.nfs-ganesha
+
+ADDON_ID=script.service.nfs-ganesha
+ADDON_DIR="$HOME/.kodi/addons/$ADDON_ID"
+ADDON_HOME="$HOME/.kodi/userdata/addon_data/$ADDON_ID"
+CONFIG="$ADDON_HOME/ganesha/ganesha.conf"
+LOGFILE="$ADDON_HOME/ganesha.log"
+
+$ADDON_DIR/bin/ganesha.nfsd -f $CONFIG -p /var/run/ganesha.pid -L $LOGFILE

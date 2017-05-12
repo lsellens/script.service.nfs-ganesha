@@ -1,0 +1,21 @@
+[Unit]
+Description=nfs-ganesha
+After=network-online.target rpcbind.target
+Requires=network-online.target rpcbind.target
+Wants=rpcbind.service
+After=rpcbind.service
+
+[Service]
+Type=forking
+ExecStart=/bin/sh -c "exec sh /storage/.kodi/addons/script.service.nfs-ganesha/bin/nfs-ganesha.start"
+ExecStop=/bin/sh -c "exec sh /storage/.kodi/addons/script.service.nfs-ganesha/bin/nfs-ganesha.stop"
+ExecReload=/bin/kill -HUP $MAINPID
+PIDFile=/var/run/ganesha.pid
+TimeoutStopSec=1
+Restart=always
+RestartSec=2
+StartLimitInterval=0
+
+[Install]
+WantedBy=multi-user.target
+
