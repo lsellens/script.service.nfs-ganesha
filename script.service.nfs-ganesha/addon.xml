@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="script.service.nfs-ganesha"
        name="nfs-ganesha"
-       version="0.0.1"
+       version="0.0.2"
        provider-name="lsellens">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -14,7 +14,7 @@
     <platform>linux</platform>
     <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
     <source>https://github.com/lsellens/script.service.nfs-ganesha</source>
-    <news>0.0.1 - initial version - nfs-ganesha-2.5-rc2</news>
+    <news>0.0.2 - nfs-ganesha-2.5-final</news>
     <assets>
       <icon>resources/icon.png</icon>
     </assets>
