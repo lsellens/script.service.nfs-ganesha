@@ -1,0 +1,114 @@
+# XBMC Media Center language file
+# Addon Name: nfs-ganesha
+# Addon id: script.service.nfs-ganesha
+# Addon version: 0.0.3
+# Addon Provider: lsellens
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC-Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: 2024-05-16 16:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+msgctxt "Addon Summary"
+msgid "nfs-ganesha: a user-space nfsv4 daemon"
+msgstr ""
+
+msgctxt "Addon Description"
+msgid "nfs-ganesha is a user-mode file server for NFSv4."
+msgstr ""
+
+msgctxt "#32000"
+msgid "General"
+msgstr ""
+
+msgctxt "#32001"
+msgid "Number of Folders to Share"
+msgstr ""
+
+msgctxt "#32002"
+msgid "Share Folder 1"
+msgstr ""
+
+msgctxt "#32003"
+msgid "Read Write or Read Only"
+msgstr ""
+
+msgctxt "#32004"
+msgid "Share Folder 2"
+msgstr ""
+
+msgctxt "#32005"
+msgid "Read Write or Read Only"
+msgstr ""
+
+msgctxt "#32006"
+msgid "Share Folder 3"
+msgstr ""
+
+msgctxt "#32007"
+msgid "Read Write or Read Only"
+msgstr ""
+
+msgctxt "#32008"
+msgid "Share Folder 4"
+msgstr ""
+
+msgctxt "#32009"
+msgid "Read Write or Read Only"
+msgstr ""
+
+msgctxt "#32010"
+msgid "Share Folder 5"
+msgstr ""
+
+msgctxt "#32011"
+msgid "Read Write or Read Only"
+msgstr ""
+
+msgctxt "#32012"
+msgid "Share Folder 6"
+msgstr ""
+
+msgctxt "#32013"
+msgid "Read Write or Read Only"
+msgstr ""
+
+msgctxt "#32014"
+msgid "Share Folder 7"
+msgstr ""
+
+msgctxt "#32015"
+msgid "Read Write or Read Only"
+msgstr ""
+
+msgctxt "#32016"
+msgid "Share Folder 8"
+msgstr ""
+
+msgctxt "#32017"
+msgid "Read Write or Read Only"
+msgstr ""
+
+msgctxt "#32018"
+msgid "Share Folder 9"
+msgstr ""
+
+msgctxt "#32019"
+msgid "Read Write or Read Only"
+msgstr ""
+
+msgctxt "#32020"
+msgid "Share Folder 10"
+msgstr ""
+
+msgctxt "#32021"
+msgid "Read Write or Read Only"
+msgstr ""

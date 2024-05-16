@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.service.nfs-ganesha"
-       name="nfs-ganesha"
-       version="0.0.3"
-       provider-name="lsellens">
+<addon id="script.service.nfs-ganesha" name="nfs-ganesha" version="0.0.3" provider-name="lsellens">
   <requires>
+    <import addon="xbmc.addon" version="19.1.0"/>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.service" library="service.py">
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary>nfs-ganesha: a user-space nfsv4 daemon</summary>
-    <description>nfs-ganesha is a user-mode file server for NFSv4.</description>
+    <summary lang="en">nfs-ganesha: a user-space nfsv4 daemon</summary>
+    <description lang="en">nfs-ganesha is a user-mode file server for NFSv4.</description>
+    <language>en</language>
     <platform>linux</platform>
     <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
     <source>https://github.com/lsellens/script.service.nfs-ganesha</source>

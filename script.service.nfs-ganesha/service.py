@@ -14,8 +14,8 @@ class MyMonitor(xbmc.Monitor):
 
 # addon
 __addon__ = xbmcaddon.Addon(id='script.service.nfs-ganesha')
-__addonpath__ = xbmc.translatePath(__addon__.getAddonInfo('path'))
-__addonhome__ = xbmc.translatePath(__addon__.getAddonInfo('profile'))
+__addonpath__ = xbmcvfs.translatePath(__addon__.getAddonInfo('path'))
+__addonhome__ = xbmcvfs.translatePath(__addon__.getAddonInfo('profile'))
 __scriptname__ = "nfs-ganesha"
 __author__ = "lsellens"
 __url__ = "https://github.com/lsellens/xbmc.addons"
@@ -23,7 +23,7 @@ __url__ = "https://github.com/lsellens/xbmc.addons"
 
 def writeexports():
     shares = __addon__.getSetting("SHARES")
-    file = xbmcvfs.File(xbmc.translatePath(__addonhome__ + 'ganesha/ganesha.conf'), 'w')
+    file = xbmcvfs.File(xbmcvfs.translatePath(__addonhome__ + 'ganesha/ganesha.conf'), 'w')
     file.write('NFS_CORE_PARAM{NFS_Protocols=4;}\n')
     file.write('EXPORT_DEFAULTS{SecType=none;Protocols=4;Squash=All_Squash;Anonymous_uid=0;Anonymous_gid=0;}\n')
     for i in range(0, int(shares)):
@@ -37,7 +37,7 @@ def writeexports():
     system("systemctl reload script.service.nfs-ganesha.service")
 
 
-if not xbmcvfs.exists(xbmc.translatePath(__addonhome__ + 'ganesha/ganesha.conf')):
+if not xbmcvfs.exists(xbmcvfs.translatePath(__addonhome__ + 'ganesha/ganesha.conf')):
     writeexports()
 
 monitor = MyMonitor()

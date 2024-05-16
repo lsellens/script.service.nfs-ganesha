@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <strings>
-
-    <!-- nfs-ganesha -->
     <string id="32000">General</string>
     <string id="32001">Number of Folders to Share</string>
     <string id="32002">Share Folder 1</string>
